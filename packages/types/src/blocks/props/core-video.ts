@@ -1,4 +1,4 @@
-import { BlockProps } from '../base';
+import { BlockAttributes, BlockProps } from '../base';
 
 export interface TrackProps {
 	src: string;
@@ -7,7 +7,7 @@ export interface TrackProps {
 	label: string;
 }
 
-export interface CoreVideoAttributes extends Record< string, unknown > {
+export interface CoreVideoAttributes extends BlockAttributes {
 	autoplay?: boolean;
 	caption?: string;
 	controls: boolean;

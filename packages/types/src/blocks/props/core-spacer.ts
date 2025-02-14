@@ -1,6 +1,6 @@
-import { BlockProps } from '../base';
+import { BlockAttributes, BlockProps } from '../base';
 
-export interface CoreSpacerAttributes extends Record< string, unknown > {
+export interface CoreSpacerAttributes extends BlockAttributes {
 	height: string;
 	style?: string;
 	width?: string;

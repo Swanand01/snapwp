@@ -1,13 +1,13 @@
 import React from 'react';
-import { BlockTypeMap } from './map';
-import { BlockData } from './base';
+import { BlockAttributesMap } from './map';
+import { BlockAttributes, BlockData } from './base';
 
 export type BlockDefinitions = Partial<
 	{
-		[ K in keyof BlockTypeMap ]: React.FC<
-			BlockData< BlockTypeMap[ K ] >
+		[ K in keyof BlockAttributesMap ]: React.FC<
+			BlockData & BlockAttributes< BlockAttributesMap[ K ] >
 		> | null;
 	} & {
-		[ key: string ]: React.FC< BlockData< any > > | null;
+		[ key: string ]: React.FC< BlockData & BlockAttributes< any > > | null;
 	}
 >;

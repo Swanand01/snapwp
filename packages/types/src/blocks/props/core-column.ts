@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react';
-import { BlockProps } from '../base';
+import { BlockAttributes, BlockProps } from '../base';
 
-export interface CoreColumnAttributes extends Record< string, unknown > {
+export interface CoreColumnAttributes extends BlockAttributes {
 	style?: string;
 	width?: string;
 	cssClassName?: string;

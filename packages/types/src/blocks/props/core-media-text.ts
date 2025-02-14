@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import { BlockProps } from '../base';
+import { BlockAttributes, BlockProps } from '../base';
 import { FocalPoint } from '.';
 
 export interface CoreMediaTextProps extends PropsWithChildren< BlockProps > {
@@ -9,7 +9,7 @@ export interface CoreMediaTextProps extends PropsWithChildren< BlockProps > {
 	mediaDetails?: CoreMediaTextMediaDetails;
 }
 
-export interface CoreMediaTextAttributes extends Record< string, unknown > {
+export interface CoreMediaTextAttributes extends BlockAttributes {
 	href?: string;
 	linkClass?: string;
 	linkTarget?: string;

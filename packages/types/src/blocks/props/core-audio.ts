@@ -1,6 +1,6 @@
-import { BlockProps } from '../base';
+import { BlockAttributes, BlockProps } from '../base';
 
-export interface CoreAudioAttributes extends Record< string, unknown > {
+export interface CoreAudioAttributes extends BlockAttributes {
 	autoplay?: boolean;
 	caption?: string;
 	loop?: boolean;

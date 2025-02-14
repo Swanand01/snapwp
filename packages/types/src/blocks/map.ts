@@ -25,7 +25,7 @@ import {
 	CoreVideoAttributes,
 } from '.';
 
-export interface BlockTypeMap {
+export interface BlockAttributesMap {
 	CoreAudio: CoreAudioAttributes;
 	CoreButton: CoreButtonAttributes;
 	CoreButtons: CoreButtonsAttributes;

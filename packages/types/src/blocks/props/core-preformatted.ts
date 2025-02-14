@@ -1,6 +1,6 @@
-import { BlockProps } from '../base';
+import { BlockAttributes, BlockProps } from '../base';
 
-export interface CorePreformattedAttributes extends Record< string, unknown > {
+export interface CorePreformattedAttributes extends BlockAttributes {
 	content?: string;
 	style?: string;
 }

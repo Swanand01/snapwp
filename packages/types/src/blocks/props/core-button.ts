@@ -1,6 +1,6 @@
-import { BlockProps } from '../base';
+import { BlockAttributes, BlockProps } from '../base';
 
-export interface CoreButtonAttributes extends Record< string, unknown > {
+export interface CoreButtonAttributes extends BlockAttributes {
 	cssClassName?: string;
 	linkClassName?: string;
 	linkTarget?: string;

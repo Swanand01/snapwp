@@ -1,6 +1,6 @@
-import { BlockProps } from '../base';
+import { BlockAttributes, BlockProps } from '../base';
 
-export interface CoreFileAttributes extends Record< string, unknown > {
+export interface CoreFileAttributes extends BlockAttributes {
 	displayPreview?: boolean;
 	downloadButtonText?: string;
 	fileId?: string;

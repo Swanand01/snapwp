@@ -1,6 +1,6 @@
-import { BlockProps } from '../base';
+import { BlockAttributes, BlockProps } from '../base';
 
-export interface CorePullquoteAttributes extends Record< string, unknown > {
+export interface CorePullquoteAttributes extends BlockAttributes {
 	citation?: string;
 	style?: string;
 	textAlign?: string;

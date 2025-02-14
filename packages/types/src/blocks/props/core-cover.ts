@@ -1,5 +1,5 @@
 import { ElementType, PropsWithChildren } from 'react';
-import { BlockProps } from '../base';
+import { BlockAttributes, BlockProps } from '../base';
 
 export interface FocalPoint {
 	x: number;
@@ -20,7 +20,7 @@ export interface CoreCoverConnectedMediaItem {
 	};
 }
 
-export interface CoreCoverAttributes extends Record< string, unknown > {
+export interface CoreCoverAttributes extends BlockAttributes {
 	alt?: string;
 	backgroundType?: string;
 	contentPosition?: string;

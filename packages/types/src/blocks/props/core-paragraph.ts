@@ -1,6 +1,6 @@
-import { BlockProps } from '../base';
+import { BlockAttributes, BlockProps } from '../base';
 
-export interface CoreParagraphAttributes extends Record< string, unknown > {
+export interface CoreParagraphAttributes extends BlockAttributes {
 	backgroundColor?: string;
 	content?: string;
 	cssClassName?: string;
